@@ -1,0 +1,4 @@
+/* esto no me funciona, tuve que declarar style en el html directamente */
+.title {
+    padding-left: 5rem;
+}
