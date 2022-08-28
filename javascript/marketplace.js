@@ -1,11 +1,12 @@
-let Edad = prompt("edad"); // por que no funciona cuando se le hace parseint(prompt)? , como hacer que solo acepte numeros y de 2 digitos?
-while(Edad == ""){
-Edad = prompt("edad");
+let AnioDeNac = parseInt (prompt("Por favor ingrese anio de nacimiento")); //como hacer que solo acepte numeros y de 4 digitos o de 1900 al ano actual por ejemplo?//
+function CalcularEdad () {
+    let Edad = 0;
+    Edad = 2022 - AnioDeNac;
+    alert("Su edad aproximada es"+" "+ Edad + " " + "años")
 }
-
-let AnioDeNac = parseInt (prompt("Para confirmar, por favor ingrese anio de nacimiento")); //como hacer que solo acepte numeros y de 4 digitos o de 1900 al ano actual por ejemplo?//
+CalcularEdad()
     if (AnioDeNac <= 2004){ //por que deja ingresar caracteres especiales sin dar error? ej
-        let MayorEdad = prompt("Necesitamos una ultima confirmacion, confirma usted que es mayor de edad? Si / No");
+        let MayorEdad = prompt("Alerta de autoidentificacion, confirma usted que es mayor de edad? Si / No");
             if (MayorEdad.toLowerCase() == "si"){
                 alert("Gracias! Puede continuar");  
             }

@@ -2,3 +2,22 @@
 .title {
     padding-left: 5rem;
 }
+
+.button {
+    display:flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.buttonpaquete {
+    display:flex;
+    padding: 1rem;
+}
+
+.img {
+    position:relative;
+}
+
+.btn {
+    background-color: azure;
+}
