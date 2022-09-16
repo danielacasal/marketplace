@@ -1,15 +1,23 @@
-// Primera forma de DOM
+let frases =  document.getElementById("frase")
+console.log(frases)
 
-//getElementByClassName POR CLASS NAME -- se esperan 1+ elementos dentro de la clase / una coleccion de elementos 
-//let cupon = document.getElementsByClassName("cupon");
-//console.log(cupon)
+let cupones = document.getElementsByClassName("cupones")
+console.log(cupones)
 
-//getElementById POR ID -- se espera que sea 1 elemento
-//let frase = document.getElementById("frase");
-//console.log(frase)
+let grupoCupones = document.getElementsByClassName("cupon")
+console.log(grupoCupones)
+for (let cadaCupon of grupoCupones) {
+    console.log(cadaCupon)
+}
 
-//getElementByTag POR ETIQUETA -- devuelve un HTML collection. Mas dificil de controlar 
+let titulosh1 = document.getElementsByTagName("h1")
+console.log(titulosh1)
 
+let tituloIndex = document.getElementById("titleIndex")
+console.log(tituloIndex.innerText)
+ 
+tituloIndex.innerText = "Encuentra lo que estas buscando"
+console.log(tituloIndex.innerText)
 
 let anioDeNac = parseInt (prompt("Por favor ingrese anio de nacimiento")); //como hacer que solo acepte numeros y de 4 digitos o de 1900 al ano actual por ejemplo?//
 function calcularEdad () {
@@ -36,3 +44,6 @@ calcularEdad()
     else {
         alert("Respuesta invalida");  
     }
+
+    let cuponesDescuento = document.getElementById("frases")
+    cuponesDescuento.innerHTML += `<li class="frase">FRASE 2</li>`

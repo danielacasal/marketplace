@@ -49,6 +49,15 @@ for(let ofertas of paqueteDosPrecios){
     console.log("El precio por sesion del servicio de "+ofertas.id+" es de $"+ofertas.precio)
 }
 
+let listaDeServicios = document.getElementsByClassName("listaServicio")
+console.log(listaDeServicios)
+
+let informacionPaquetes = document.getElementsByClassName("infoPaquete")
+console.log(informacionPaquetes)
+for(let cadaPaquete of informacionPaquetes) {
+    cadaPaquete.innerText += " - Informacion de precios con descuento"
+}
+
 
 
 
