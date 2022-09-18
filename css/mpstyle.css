@@ -3,21 +3,11 @@
     padding-left: 5rem;
 }
 
-.button {
-    display:flex;
-    justify-content: center;
-    padding: 1rem;
+.serviciosEstilos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
-
-.buttonpaquete {
-    display:flex;
-    padding: 1rem;
-}
-
-.img {
-    position:relative;
-}
-
-.btn {
-    background-color: azure;
+.card{
+    margin: 1rem auto;
+    
 }
