@@ -1,30 +1,38 @@
-tituloIndex.innerText = "Encuentra lo que estas buscando"
-console.log(tituloIndex.innerText)
+let btnDarkMode = document.getElementById("botonDarkMode")
+let btnLightMode = document.getElementById("botonLightMode")
+let eliminarMode = document.getElementById("eliminarMode")
+let modoAzul
+if(localStorage.getItem("darkMode")){
+  modoAzul = localStorage.getItem("darkMode")
+}else{
+  localStorage.setItem("darkMode", false)
+}
+if(modoAzul == "true"){
+  document.body.style.backgroundColor = "cadetblue"
+  document.body.style.color = "white"
+}else{
+  document.body.style.backgroundColor = "#d3bdb0"
+  document.body.style.color = "black"
+}
 
-//let anioDeNac = parseInt (prompt("Por favor ingrese anio de nacimiento")); //como hacer que solo acepte numeros y de 4 digitos o de 1900 al ano actual por ejemplo?//
-//function calcularEdad () {
-  //  let edad = 0;
-    //edad = 2022 - anioDeNac;
-    //alert("Su edad aproximada es"+" "+ edad + " " + "años")
-//}
-//calcularEdad()
-  //  if (anioDeNac <= 2004){ //por que deja ingresar caracteres especiales sin dar error? ej
-    //    let mayorEdad = prompt("Alerta de autoidentificacion, confirma usted que es mayor de edad? Si / No");
-      //      if (mayorEdad.toLowerCase() == "si"){
-        //        alert("Gracias! Puede continuar");  
-          //  }
-            //else if (mayorEdad.toLowerCase() == "no") {
-              //  alert("Puedes ver la informacion de la pagina, pero para recibir servicio debe autorizarte tu representante legal");
-            //}
-            //else {
-              //  alert("Respuesta invalida");
-            //}
-    //}
-    //else if (anioDeNac > 2004){
-      //  alert("Puedes ver la informacion de la pagina, pero para recibir servicio debe autorizarte tu representante legal");
-        //}
-    //else {
-      //  alert("Respuesta invalida");  
-    //}
+btnDarkMode.addEventListener("click", () => {
+  document.body.style.backgroundColor = "cadetblue"
+  document.body.style.color = "white"
+  localStorage.setItem("darkMode", true)
+})
+
+btnLightMode.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#d3bdb0" 
+  document.body.style.color = "black"
+  localStorage.setItem("darkMode", false)
+})
+
+eliminarMode.addEventListener("click", () => {
+  document.body.style.backgroundColor = "white" 
+  document.body.style.color = "black"
+  localStorage.removeItem("darkMode")
+})
+
+
 
 

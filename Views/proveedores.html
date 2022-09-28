@@ -25,25 +25,26 @@
 </header>
 <main>
     <section class="container-fluid">
-
-        <div class="row" style="background-color: #d3bdb0; padding: 4rem;">
-            <form>
-                <label for="nombre">Nombre del servicio:</label><br>
-                <input type="text" id="nombreInput" name="nombre"><br>
-                <label for="duracion">Duracion en minutos:</label><br>
-                <input type="text" id="duracionInput" name="duracion"><br>
-                <label for="precio">Precio por sesion:</label><br>
-                <input type="text" id="precioInput" name="precio"><br>
-                <br>
-                <button id="guardarServicioBtn">Guardar</button>
-                <br><br>
-                <button id="verCatalogo">Ver mi catálogo de servicios</button>
-                <br>
-                <button id="ocultarCatalogo">Ocultar catálogo</button>
-                <h3>Mis productos:</h3>
-                <div id="servicios1" class="serviciosEstilos"></div>
-            </form>
-        </div>
+      <div class="row" style="background-color: #d3bdb0; padding: 4rem;">
+        <form>
+          <label for="nombre">Nombre del servicio:</label><br>
+          <input type="text" id="nombreInput" name="nombre"><br>
+          <label for="duracion">Duracion en minutos:</label><br>
+          <input type="text" id="duracionInput" name="duracion"><br>
+          <label for="precio">Precio por sesion:</label><br>
+          <input type="text" id="precioInput" name="precio"><br>
+          <br>
+          <button id="guardarServicioBtn" role="button">Guardar</button>
+          <br><br>
+          <button id="verCatalogo">Ver mi catálogo de servicios</button>
+          <br>
+          <button id="borrarCatalogo">Ocultar catálogo</button>
+          <div id="servicios1" class="serviciosEstilos"></div>
+        </form>
+      </div>
+      <div class = "row" id="listaServicios" style="background-color: white;">
+        <h3> Mis productos </h3>
+      </div>
     </section>
 </main>
 <footer>

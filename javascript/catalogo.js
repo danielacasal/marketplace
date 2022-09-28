@@ -47,5 +47,14 @@ for (let agregado of botonAgregar){
     })
 }
 
+let serv1JSON= JSON.stringify(servicio001)
+localStorage.setItem("objetoServicio", servicio001)
+localStorage.setItem("objetoServJSON", serv1JSON)
+
+let servicioStore = localStorage.getItem("objetoServicio")
+console.log(servicioStore)
+
+let objetoServJSON = JSON.parse(localStorage.getItem("objetoServJSON"))
+console.log(objetoServJSON)
 
 
