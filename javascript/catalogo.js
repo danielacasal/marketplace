@@ -1,3 +1,6 @@
+let edad = parseInt (prompt("Para confirmar, por favor ingrese su edad"))
+edad > 17 ? Swal.fire({text:"Puede continuar", confirmButtonColor: "blue"}) : Swal.fire({text:"Puede continuar pero necesita autorizacion de adulto para comprar", confirmButtonColor: "blue"})
+
 class Servicio {
     constructor(id, nombre, duracion, precio, imagen) {
         this.id = id,
